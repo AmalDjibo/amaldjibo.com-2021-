@@ -1,113 +1,77 @@
 @font-face {
   src: url(fonts/TimesNewerRoman-Regular.otf);
-  font-family: se;
+  font-family: 'se';  
 }
 
 * {
-  font-family: se;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: 'se', sans-serif;
 }
 
 body {
-  background-color: #F0F0F0;
-  color: #333;
-  font-size: 16px;
+  background-color: black;
+  color: red;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #333;
-  color: #F0F0F0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+.header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
-header a {
-  color: #F0F0F0;
+.header a {
+  color: white;
   text-decoration: none;
 }
 
-header a:hover {
-  color: #FF0000;
+.header a:hover {
+  color: red;
 }
 
-header .logo {
-  font-size: 2em;
-}
-
-header nav {
-  display: flex;
-}
-
-header nav a {
-  padding: 10px;
-  text-decoration: none;
-  color: #F0F0F0;
-  margin-left: 10px;
-}
-
-header nav a:hover {
-  color: #FF0000;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.main-content {
+.nav {
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 
-.left-side {
-  width: 75%;
-}
-
-.right-side {
-  width: 25%;
-  background-color: #333;
-  color: #F0F0F0;
-  padding: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: #F0F0F0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-footer a {
-  color: #F0F0F0;
+.nav a {
+  color: red;
   text-decoration: none;
+  padding: 0.5em 1em;
 }
 
-footer a:hover {
-  color: #FF0000;
+.nav a:hover {
+  color: white;
 }
 
 .con {
-  margin-top: 20px;
+  padding: 1em;
+  background-color: white;
+  color: black;
+  min-height: 50vh;
 }
 
-@media only screen and (max-width: 767px) {
-  header nav {
+.footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .nav {
     flex-direction: column;
-  }
-  .main-content {
-    flex-direction: column;
-  }
-  .left-side, .right-side {
-    width: 100%;
-  }
-  .con {
-    margin-top: 0;
   }
 }
