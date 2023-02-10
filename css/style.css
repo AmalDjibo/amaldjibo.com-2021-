@@ -129,6 +129,7 @@ height: 170px;
   }
 
   .nav-link {
+     text-decoration: none;
      color: red;
     font-size: 18px;
   }
@@ -261,4 +262,16 @@ height: 170px;
   .main-p2 {
     font-size: 16px;
   }
+    
+  @media only screen and (max-width: 767px) {
+.da-nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.nav-link {
+margin: 10px 0;
+}
+}
 }
