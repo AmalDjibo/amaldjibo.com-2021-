@@ -1,4 +1,4 @@
-* {
+CSS: * {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -195,5 +195,70 @@ height: 170px;
   
   .main-p2 {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header {
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
+  
+  .main-con {
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
+  
+  .awd {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .abu {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .con {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .port {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .da-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+  
+  .foot-item {
+    font-size: 18px;
+  }
+  
+  .main-p {
+    font-size: 16px;
+  }
+  
+  .main-p2 {
+    font-size: 16px;
   }
 }
