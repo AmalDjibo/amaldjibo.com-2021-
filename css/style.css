@@ -1,277 +1,92 @@
-CSS: * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-  
- @font-face {
-src: url(fonts/TimesNewerRoman-Regular.otf);
-font-family: se;  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-
-html, body {
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    overflow-x: hidden;
-}  
 
 body {
-background-color: black;  
+  background-color: #f2f2f2;
 }
 
-
-
-
-header {
-background-color: black;
-width: 100%;
-height: 170px;
-} 
-  
-  .port {
-    position: relative;
-    left:60px;
-    top: -20px;
-  }  
-  
-  .con {
-    position: relative;
-    left: 140px;
-    top: -40px;
-  }
-  
-  .abu {
-    position: relative;
-    left: 258px;
-    top: -41px;
-  }
-  
-  .awd {
-    position: relative;
-    top: -20px;
-    left: 70px;
-  }
-  
-  .impos {
-    position: relative;
-    top: -29px;
-    left: 10px
-  }
-  
-  .bot-2 {
-    position: relative;
-    top: -20px;
-    left: -10px
-  }
-  .da-nav {
-    position: relative;
-    top: 40px;
-    left: 40px
-  }  
-
-
-.main-header {
-  position: relative;
-  left: 110px;  
-  color: red;    
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
-.main-p {
-  font-size: 18px;
+.header h1 {
+  margin-top: 0;
 }
 
-.main-p2 {
-  position: relative;
-  top: -20px;
-  font-size: 18px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
-.main-con {
-  position: relative;
-  top: 20px;
-  left: 5px
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-.col {
-    color: red;
-    font-size: 18px;
-    padding: 20px;
-  }
-  
-  .bl {
-    position: relative;
-    top: -30px;
-  }
-  
-  .foot-item {
-    color: red;
-    font-size: 20px;
-  }
-  
-  .fp {
-    padding: 20px;
-  }
-  
-  .pr {
-    position: relative;
-    top: -30px
-  }
-  
-  .cp {
-    position: relative;
-    top: -60px
-  } 
-  
-  .dis {
-    position: relative;
-    top: -90px
-  }
-
-  .nav-link {
-     text-decoration: none;
-     color: red;
-    font-size: 18px;
-  }
-
-@media only screen and (min-width: 1000px){
-  .awd {
-    position: relative;
-    left: 500px;
-    top: -80px
-  }
-  
-  .abu {
-    position: relative;
-    left: 390px;
-    top: -50px;
-  }
-  
-  .con {
-    position: relative;
-    left: 230px;
-    top: -43px;
-  }
-  
-  .port {
-    position: relative;
-    left: 115px;
-    top: -15px  
-  }
-  
-  .home {
-    position: relative;
-    left: 30px;
-    top: 12px;
-  }
-  
-  .nav-link {
-    font-size: 25px;
-  }
-  
-  .da-nav {
-    position: relative;
-    left: 300px; 
-  }
-  
-  .main-4 {
-    position: relative;
-  }
-  
-  .main-header {
-    position: relative;
-    left: 590px;
-  }
-  
-  .main-con {
-    position: relative;
-    left: 200px
-  }
-  
-  
-  
-  .main-p {
-    font-size: 20px;
-  }
-  
-  .main-p2 {
-    font-size: 20px;
-  }
+nav a:hover {
+  color: lightgray;
 }
 
-@media only screen and (max-width: 600px) {
-  .main-header {
-    position: relative;
-    left: 0;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main .box {
+  width: 30%;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.con {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
     text-align: center;
   }
   
-  .main-con {
-    position: relative;
-    left: 0;
-    text-align: center;
+  .main {
+    flex-direction: column;
   }
   
-  .awd {
-    position: relative;
-    left: 0;
-    top: 0;
-    text-align: center;
+  .main .box {
+    width: 100%;
+    margin-bottom: 1rem;
   }
   
-  .abu {
-    position: relative;
-    left: 0;
-    top: 0;
-    text-align: center;
+  .footer p {
+    font-size: 0.8rem;
   }
-  
-  .con {
-    position: relative;
-    left: 0;
-    top: 0;
-    text-align: center;
-  }
-  
-  .port {
-    position: relative;
-    left: 0;
-    top: 0;
-    text-align: center;
-  }
-  
-  .da-nav {
-    position: relative;
-    left: 0;
-    top: 0;
-    text-align: center;
-  }
-  
-  .nav-link {
-    font-size: 18px;
-  }
-  
-  .foot-item {
-    font-size: 18px;
-  }
-  
-  .main-p {
-    font-size: 16px;
-  }
-  
-  .main-p2 {
-    font-size: 16px;
-  }
-    
-  @media only screen and (max-width: 767px) {
-.da-nav {
-display: flex;
-flex-direction: column;
-align-items: center;
 }
 
-.nav-link {
-margin: 10px 0;
-}
-}
+@media (max-width: 575px) {
+  .footer p {
+    font-size: 0.7rem;
+  }
 }
